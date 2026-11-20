@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoMath Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">Geo<span>Math.</span></a>
+        <nav>
+            <a href="#calculator">Calculator</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="eyebrow">GEOMETRY CALCULATOR</p>
+            <h1>Calculate Geometry<br>the <span>Easy Way.</span></h1>
+            <p>
+                Calculate geometric measurements with formulas
+                and step-by-step solutions.
+            </p>
+        </section>
+
+        <section class="calculator-section" id="calculator">
+            <div class="calculator-card">
+                <div class="section-heading">
+                    <h2>Geometry Calculator</h2>
+                    <p>Choose a shape and what you want to calculate.</p>
+                </div>
+
+                <form id="calculatorForm">
+
+                    <div class="form-group">
+                        <label for="shape">Choose Shape</label>
+                        <select id="shape">
+                            <option value="persegi">Persegi</option>
+                            <option value="persegi-panjang">
+                                Persegi Panjang
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="target">What do you want to find?</label>
+                        <select id="target"></select>
+                    </div>
+
+                    <div id="inputFields"></div>
+
+                    <button type="submit" class="calculate-btn">
+                        Calculate
+                    </button>
+
+                </form>
+
+                <div id="result" class="result hidden" aria-live="polite">
+                    <h3>Calculation Result</h3>
+                    <div id="resultValue" class="result-value"></div>
+
+                    <div class="steps">
+                        <h4>Solution Steps</h4>
+                        <ol id="stepsList"></ol>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About GeoMath</h2>
+            <p>
+                GeoMath is a geometry calculator designed to help
+                students calculate and understand geometric problems.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>GeoMath Calculator &copy; 2026</p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

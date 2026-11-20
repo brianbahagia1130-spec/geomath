@@ -1,0 +1,8 @@
+
+{
+  "name": "geomath",
+  "version": "1.0.0",
+  "description": "Struktur dasar dengan persegi & persegi panjang",
+  "private": true,
+  "type": "module"
+}
